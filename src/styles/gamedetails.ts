@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const GameInfoContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  max-width: 1000px;
+  max-width: 900px;
 
   img {
     width: 400px;

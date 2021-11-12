@@ -61,7 +61,7 @@ export const GameInfo = styled.div`
 
 export const Button = styled.button`
   width: 70%;
-  padding: 0.3rem 0;
+  padding: 0.5rem 0;
   font-size: 0.8rem;
   border: 1px solid black;
   border-radius: 3px;
@@ -78,8 +78,8 @@ export const Button = styled.button`
     margin-top: 0.8em;
   }
   &:hover {
-    border: 1px solid red;
-    box-shadow: 0px 0px 2px red;
+    border: 1px solid #61ce70;
+    box-shadow: 0px 0px 2px black;
   }
 
   @media (max-width: 720px) {
