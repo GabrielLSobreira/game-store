@@ -1,11 +1,21 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
 import { GoCreditCard } from 'react-icons/go';
-import { BsCashCoin, BsBag, BsCartPlus } from 'react-icons/bs';
+import { BsCashCoin, BsBag } from 'react-icons/bs';
 import { useContext } from 'react';
 import { Button, GameInfo } from './styles';
+import { useRouter } from 'next/dist/client/router';
+import CartContext from '../../contexts/CartContext';
+import { Game } from '../../types/Game';
 
-export const GameList = ({ game }: any) => {
+interface GameProps {
+  game: Game;
+}
+
+export const GameList = ({ game }: GameProps) => {
+  const data = useContext(CartContext);
+  const { handleAddCart } = data;
+  const router = useRouter();
   return (
     <GameInfo key={game.slug}>
       <Link href={`/${game.slug}`}>
@@ -23,13 +33,9 @@ export const GameList = ({ game }: any) => {
         <BsCashCoin />
         5% á vista
       </span>
-      <Button>
+      <Button onClick={() => router.push(`/${game.slug}`)}>
         <BsBag />
         Comprar
-      </Button>
-      <Button>
-        <BsCartPlus />
-        Carrinho
       </Button>
     </GameInfo>
   );

@@ -14,6 +14,9 @@ import {
 import { FaXbox, FaPlaystation } from 'react-icons/fa';
 import { BsArrowLeftCircle } from 'react-icons/bs';
 import Link from 'next/link';
+import { useContext } from 'react';
+import CartContext from '../contexts/CartContext';
+import { useRouter } from 'next/dist/client/router';
 
 interface gameProps {
   game: Game;
@@ -25,6 +28,9 @@ type Params = {
   };
 };
 const GameDetails = ({ game }: gameProps) => {
+  const data = useContext(CartContext);
+  const router = useRouter();
+  const { handleAddCart } = data;
   return (
     <Container>
       <Link href="/">
@@ -62,7 +68,14 @@ const GameDetails = ({ game }: gameProps) => {
               </strong>
               á vista
             </span>
-            <button>Comprar</button>
+            <button
+              onClick={() => {
+                handleAddCart!(game);
+                router.push('/cart');
+              }}
+            >
+              Comprar
+            </button>
           </Price>
         </GameInfo>
       </GameInfoContainer>
