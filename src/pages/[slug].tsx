@@ -37,7 +37,7 @@ const GameDetails = ({ game }: gameProps) => {
         <img src={game.image.url} alt={game.title} />
         <GameInfo>
           <strong>Sinopse: </strong>
-          <p dangerouslySetInnerHTML={{ __html: game.content }}></p>
+          <p>{game.content}</p>
           <span>
             <strong>Data de Lançamento: </strong>
             {game.date}
@@ -77,7 +77,9 @@ export const getServerSideProps = async ({ params }: Params) => {
   const game = {
     slug: response.uid,
     title: RichText.asText(response.data.title),
-    content: RichText.asHtml(response.data.content),
+    content:
+      response.data.content.find((content: any) => content.type === 'paragraph')
+        ?.text ?? '',
     date: new Date(response.data.date).toLocaleDateString('pt-br', {
       day: '2-digit',
       month: 'long',
