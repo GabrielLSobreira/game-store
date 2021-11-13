@@ -5,6 +5,7 @@ import {
   useEffect,
   useState,
 } from 'react';
+import { toast } from 'react-toastify';
 import { Game } from '../types/Game';
 
 interface CartContextProps {
@@ -28,7 +29,7 @@ export const AppProvider = ({ children }: AppProviderProps) => {
 
   const handleAddCart = (item: Game) => {
     if (cart.some((i) => i.slug === item.slug)) {
-      return alert('Você já adicionou esse jogo ao carrinho!');
+      return toast.error('Você já adicionou esse jogo ao carrinho!');
     }
     setCart([...cart, item]);
   };
