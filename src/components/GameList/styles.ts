@@ -61,7 +61,7 @@ export const GameInfo = styled.div`
 
 export const Button = styled.button`
   width: 70%;
-  padding: 0.5rem 0;
+  padding: 0.3rem 0;
   font-size: 0.8rem;
   border: 1px solid black;
   border-radius: 3px;

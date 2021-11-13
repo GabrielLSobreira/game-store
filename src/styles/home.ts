@@ -9,7 +9,7 @@ export const Container = styled.div`
 
 export const GamesContainer = styled.div`
   display: grid;
-  margin-top: 3rem;
+  margin: 3rem 0;
   grid-template-columns: repeat(5, 1fr);
   gap: 25px;
 

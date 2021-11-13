@@ -32,7 +32,7 @@ export const Logo = styled.a`
   }
 
   @media (max-width: 720px) {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     svg {
       margin-left: 0.5rem;
       color: yellow;
@@ -56,7 +56,7 @@ export const Item = styled.a`
   transition: all 0.2s;
 
   &:hover {
-    color: red;
+    font-weight: bold;
   }
 
   &.active {

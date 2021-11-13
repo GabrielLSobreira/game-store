@@ -91,6 +91,8 @@ export const Price = styled.div`
 
     @media (max-width: 1024px) {
       max-width: 50%;
+      margin-top: 0.5rem;
+      margin-bottom: 1.5rem;
     }
   }
 `;
