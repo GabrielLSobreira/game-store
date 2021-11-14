@@ -1,5 +1,26 @@
 import styled from 'styled-components';
 
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 2rem;
+  padding-bottom: 100px;
+  h2 {
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    svg {
+      margin-right: 0.3rem;
+    }
+  }
+`;
+
 export const GameInfoContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -93,26 +114,6 @@ export const Price = styled.div`
       max-width: 50%;
       margin-top: 0.5rem;
       margin-bottom: 1.5rem;
-    }
-  }
-`;
-
-export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 2rem;
-  h2 {
-    margin-bottom: 2rem;
-    font-size: 1.8rem;
-  }
-
-  a {
-    display: flex;
-    align-items: center;
-    margin: 1rem 0;
-    svg {
-      margin-right: 0.3rem;
     }
   }
 `;

@@ -7,6 +7,8 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
   }
   html {
+    min-height: 100%;
+    position: relative;
     @media (max-width: 1080px) {
       font-size: 93.75%;
     }
