@@ -1,6 +1,8 @@
 # Next-Games
 # Sobre o projeto
 
+### Acesse: https://gsnextgames.vercel.app/
+
 O projeto é uma mini e-commerce de jogos, desenvolvi esse projeto para treinar e aplicar os principais conceitos de React e NextJS, como Server Side Rendering, Next Router, Context API entre outros. Utilizei o Prismic como sistema de gerencimento de conteúdo, com isso é possível adicionar ou remover os jogos da loja sem a necessidade de qualquer alteração no código. 
 
 ## Demonstração 💻
