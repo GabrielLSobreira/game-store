@@ -5,11 +5,16 @@ import { GlobalStyle } from '../styles/globals';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Footer from '../components/Footer';
+import SEO from '../components/SEO';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <AppProvider>
+        <SEO
+          title="Next Games"
+          description="A melhor loja de jogos do Brasil"
+        />
         <GlobalStyle />
         <ToastContainer autoClose={2500} />
         <Header />

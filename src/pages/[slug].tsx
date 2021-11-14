@@ -17,6 +17,7 @@ import Link from 'next/link';
 import { useContext } from 'react';
 import CartContext from '../contexts/CartContext';
 import { useRouter } from 'next/dist/client/router';
+import SEO from '../components/SEO';
 
 interface gameProps {
   game: Game;
@@ -33,6 +34,7 @@ const GameDetails = ({ game }: gameProps) => {
   const { handleAddCart } = data;
   return (
     <Container>
+      <SEO title={`Next Games | ${game.title}`} />
       <Link href="/">
         <a>
           <BsArrowLeftCircle /> Voltar

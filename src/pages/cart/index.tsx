@@ -8,10 +8,11 @@ import {
   Table,
   TableCollumn,
   TableHeadColumm,
-} from './styles';
+} from '../../styles/cart';
 import Link from 'next/link';
 import { TableItem } from '../../components/TableItem';
 import { useRouter } from 'next/dist/client/router';
+import SEO from '../../components/SEO';
 
 const Cart = () => {
   const data = useContext(CartContext);
@@ -20,6 +21,7 @@ const Cart = () => {
 
   return (
     <Container>
+      <SEO title="Next Games | Carrinho" />
       {!cart.length ? (
         <EmptyCart>
           <p>Não existem produtos no carrinho</p>

@@ -28,6 +28,7 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
             rel="stylesheet"
           />
+          <link rel="shortcut icon" href="/favicon.png" type="img/png" />
         </Head>
 
         <body>
