@@ -23,7 +23,7 @@ const Cart = () => {
       {!cart.length ? (
         <EmptyCart>
           <p>Não existem produtos no carrinho</p>
-          <button onClick={() => router.push('/')}>Ir as compras</button>
+          <button onClick={() => router.push('/')}>Ir às compras</button>
         </EmptyCart>
       ) : (
         <>
