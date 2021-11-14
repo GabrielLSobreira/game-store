@@ -1,34 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next-Games
+# Sobre o projeto
 
-## Getting Started
+O projeto é uma mini e-commerce de jogos, desenvolvi esse projeto para treinar e aplicar os principais conceitos de React e NextJS, como Server Side Rendering, Next Router, Context API entre outros. Utilizei o Prismic como sistema de gerencimento de conteúdo, com isso é possível adicionar ou remover os jogos da loja sem a necessidade de qualquer alteração no código. 
 
-First, run the development server:
+## Demonstração 💻
+<img src="./github/ProjectGif.gif" alt="gif">
 
-```bash
-npm run dev
-# or
-yarn dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Tecnologias Usadas
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- ✔️ [NextJS](https://nextjs.org/)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- ✔️ [React](https://pt-br.reactjs.org/)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- ✔️ [TypeScript](https://www.typescriptlang.org/)
 
-## Learn More
+- ✔️ [Styled-components](https://styled-components.com/docs/basics#installation)
 
-To learn more about Next.js, take a look at the following resources:
+- ✔️ [Prismic](https://prismic.io/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
